@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="body_container">
+
+      <!-- Модальное окно -->
+      <header class="header">
+        <nav class="nav">
+          <!-- Логотип -->
+          <div class="logo">
+            <img src="/img/logo.svg" alt="Begarit" class="logo-img" />
+            <h6 class="logo-text">Begarit</h6>
+          </div>
+
+          <!-- Десктопное меню -->
+          <div class="desktop-menu">
+            <a href="https://begarit-studio.ru/" class="menu-link">Главная</a>
+            <a
+              href="http://127.0.0.1:5500/index.html"
+              target="_blank"
+              class="menu-link"
+              >Магазин</a
+            >
+            <a href="about.html" class="menu-link">Информация</a>
+          </div>
+
+          <!-- Бургер кнопка -->
+          <button class="burger-btn" aria-label="Меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+
+        <!-- Мобильное меню -->
+        <div class="mobile-menu">
+          <div class="mobile-menu-container">
+            <nav class="mobile-nav">
+              <a
+                href="#/"
+                class="mobile-menu-link"
+                onclick="event.preventDefault(); window.router.navigate('/'); closeMenu()"
+              >
+                <img src="/icons/Booking.svg" alt="" class="menu-icon" />
+                Главная
+              </a>
+              <a
+                href="https://begarit.ru/"
+                target="_blank"
+                class="mobile-menu-link"
+              >
+                <img src="/icons/Camper.svg" alt="" class="menu-icon" />
+                Магазин
+              </a>
+              <a
+                href="#/about"
+                class="mobile-menu-link"
+                onclick="event.preventDefault(); window.router.navigate('/about'); closeMenu()"
+              >
+                <img src="/icons/Fan.svg" alt="" class="menu-icon" />
+                О нас
+              </a>
+            </nav>
+
+            <div class="mobile-menu-footer">
+              <p>© 2024 Begarit. Все права защищены.</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ------------------------------------------------------------------------------------------ -->
+
+      <div class="container">
+        <div class="filters">
+            <div class="chip-group" role="tablist">
+              <button class="chip chip--active" role="tab" aria-selected="true" data-category="all">Все услуги</button>
+              <button class="chip" role="tab" aria-selected="false" data-category="web">Веб-разработка</button>
+              <button class="chip" role="tab" aria-selected="false" data-category="design">Дизайн</button>
+              <button class="chip" role="tab" aria-selected="false" data-category="marketing">Маркетинг</button>
+              <button class="chip" role="tab" aria-selected="false" data-category="seo">SEO</button>
+            </div>
+          </div>  
+        </div>
+    
+        <div class="grid">
+          <!-- Пример карточки -->
+          <div class="card">
+            <div class="card-icon">
+                <img src="/img/Component 2.png" alt="Веб-разработка" class="card-icon-img" />
+              </div>
+            <h3>Разработка веб-сайта</h3>
+            <p>Создание современных адаптивных веб-сайтов с уникальным дизайном</p>
+            <div class="card-footer">
+              <span>от 45 000 ₽</span>
+              <i class="ri-arrow-right-line"> <img src="/img/Vector.svg" alt=""></i>
+            </div>
+          </div>
+          <!-- Остальные карточки копируются по образцу -->
+        
+          <!-- Пример карточки -->
+          <div class="card">
+            <div class="card-icon">
+                <img src="/img/Component 2.png" alt="Веб-разработка" class="card-icon-img" />
+              </div>
+            <h3>Разработка веб-сайта</h3>
+            <p>Создание современных адаптивных веб-сайтов с уникальным дизайном</p>
+            <div class="card-footer">
+              <span>от 45 000 ₽</span>
+              <i class="ri-arrow-right-line"> <img src="/img/Vector.svg" alt=""></i>
+            </div>
+          </div>
+          <!-- Остальные карточки копируются по образцу -->
+        
+          <!-- Пример карточки -->
+          <div class="card">
+            <div class="card-icon">
+                <img src="/img/Component 2.png" alt="Веб-разработка" class="card-icon-img" />
+              </div>
+            <h3>Разработка веб-сайта</h3>
+            <p>Создание современных адаптивных веб-сайтов с уникальным дизайном</p>
+            <div class="card-footer">
+              <span>от 45 000 ₽</span>
+              <i class="ri-arrow-right-line"> <img src="/img/Vector.svg" alt=""></i>
+            </div>
+          </div>
+          <!-- Остальные карточки копируются по образцу -->
+        
+          <!-- Пример карточки -->
+          <div class="card">
+            <div class="card-icon">
+                <img src="/img/Component 2.png" alt="Веб-разработка" class="card-icon-img" />
+              </div>
+            <h3>Разработка веб-сайта</h3>
+            <p>Создание современных адаптивных веб-сайтов с уникальным дизайном</p>
+            <div class="card-footer">
+              <span>от 45 000 ₽</span>
+              <i class="ri-arrow-right-line"> <img src="/img/Vector.svg" alt=""></i>
+            </div>
+          </div>
+          <!-- Остальные карточки копируются по образцу -->
+       
+                    <!-- Пример карточки -->
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="/img/Component 2.png" alt="Веб-разработка" class="card-icon-img" />
+                          </div>
+                        <h3>Разработка веб-сайта</h3>
+                        <p>Создание современных адаптивных веб-сайтов с уникальным дизайном</p>
+                        <div class="card-footer">
+                          <span>от 45 000 ₽</span>
+                          <i class="ri-arrow-right-line"> <img src="/img/Vector.svg" alt=""></i>
+                        </div>
+                      </div>
+                      <!-- Остальные карточки копируются по образцу -->
+                    
+                      <!-- Пример карточки -->
+                      <div class="card">
+                        <div class="card-icon">
+                            <img src="/img/Component 2.png" alt="Веб-разработка" class="card-icon-img" />
+                          </div>
+                        <h3>Разработка веб-сайта</h3>
+                        <p>Создание современных адаптивных веб-сайтов с уникальным дизайном</p>
+                        <div class="card-footer">
+                          <span>от 45 000 ₽</span>
+                          <i class="ri-arrow-right-line"> <img src="/img/Vector.svg" alt=""></i>
+                        </div>
+                      </div>
+                      <!-- Остальные карточки копируются по образцу -->
+                    
+                      <!-- Пример карточки -->
+                      <div class="card">
+                        <div class="card-icon">
+                            <img src="/img/Component 2.png" alt="Веб-разработка" class="card-icon-img" />
+                          </div>
+                        <h3>Разработка веб-сайта</h3>
+                        <p>Создание современных адаптивных веб-сайтов с уникальным дизайном</p>
+                        <div class="card-footer">
+                          <span>от 45 000 ₽</span>
+                          <i class="ri-arrow-right-line"> <img src="/img/Vector.svg" alt=""></i>
+                        </div>
+                      </div>
+                      <!-- Остальные карточки копируются по образцу -->
+                    
+                      <!-- Пример карточки -->
+                      <div class="card">
+                        <div class="card-icon">
+                            <img src="/img/Component 2.png" alt="Веб-разработка" class="card-icon-img" />
+                          </div>
+                        <h3>Разработка веб-сайта</h3>
+                        <p>Создание современных адаптивных веб-сайтов с уникальным дизайном</p>
+                        <div class="card-footer">
+                          <span>от 45 000 ₽</span>
+                          <i class="ri-arrow-right-line"> <img src="/img/Vector.svg" alt=""></i>
+                        </div>
+                      </div>
+                      <!-- Остальные карточки копируются по образцу -->
+          
+        </div>
+      </div>
+
+      <!-- ------------------------------------------------------------------------------------------ -->
+    </div>
+
+    <!-- Подвал сайта -->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <!-- Левая колонка с логотипом и описанием -->
+          <div class="footer-info">
+            <div class="footer-logo">
+              <img src="/img/logo.svg" alt="Begarit" class="footer-logo-img" />
+              <span class="footer-logo-text">Begarit</span>
+            </div>
+            <p class="footer-description">
+              Begarit — это студия, создающая уникальные сайты, которые помогают
+              бизнесу выделяться. Мы разрабатываем удобные и эффективные
+              решения, ориентированные на вашу аудиторию. Наша цель — усилить
+              ваш бренд через дизайн и современные технологии.
+            </p>
+          </div>
+
+          <!-- Колонки с ссылками -->
+          <div class="footer-links">
+            <!-- Комьюнити -->
+            <div class="footer-column">
+              <h3>Комьюнити</h3>
+              <a
+                href="https://discord.gg/BdnaM3UFsz"
+                class="footer-link"
+                target="_blank"
+              >
+                Discord
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M4 12L12 4M12 4H5M12 4V11"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://t.me/begarit"
+                class="footer-link"
+                target="_blank"
+              >
+                Telegram
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M4 12L12 4M12 4H5M12 4V11"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://youtube.com/@begarit-studio?si=V0NUW-LgKE7xdQGu"
+                target="_blank"
+                class="footer-link"
+              >
+                Youtube
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M4 12L12 4M12 4H5M12 4V11"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.tiktok.com/@begarit1?_t=ZM-8uGpZblohoz&_r=1"
+                target="_blank"
+                class="footer-link"
+              >
+                TikTok
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M4 12L12 4M12 4H5M12 4V11"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Поддержка -->
+            <div class="footer-column">
+              <h3>Поддержка</h3>
+              <a href="https://t.me/begarit" class="footer-link" target="_blank"
+                >Чат в Telegram</a
+              >
+              <a
+                href="https://discord.gg/BdnaM3UFsz"
+                class="footer-link"
+                target="_blank"
+                >Чат в Discord</a
+              >
+            </div>
+
+            <!-- Компания -->
+            <div class="footer-column">
+              <h3>Компания</h3>
+              <a
+                href="https://drive.google.com/drive/folders/1IaZXSKO6WlBRcR9A5ex6tf-wfxx9nRgm?usp=sharing"
+                target="_blank"
+                class="footer-link"
+                >Документация</a
+              >
+              <a
+                href="https://bg-jobflow.ru/"
+                target="_blank"
+                class="footer-link"
+                >Карьера</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Нижняя часть футера -->
+        <div class="footer-bottom">
+          <div class="footer-legal">
+            <a
+              href="https://docs.google.com/document/d/1jBkhnt_nh-Vho8BzIi6AXf_kpd1vAC1A/edit?usp=sharing&ouid=117727036843468411578&rtpof=true&sd=true"
+              target="_blank"
+              >Политика конфиденциальности</a
+            >
+            <a href="https://begarit.ru/договор-оферта/" target="_blank"
+              >Условия предоставления услуг</a
+            >
+          </div>
+          <div class="footer-credits">
+            <span>© 2025 www.begarit-studio.ru</span>
+            <span>Design By Andrey Zamyatin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------- -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
